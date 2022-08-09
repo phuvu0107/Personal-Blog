@@ -1,27 +1,28 @@
 .container-fluid {
-    padding: 1.2rem 12rem 1.2rem;
-    font-family: 'Playfair Display', serif;
-    /* padding-top: 1.2rem;
-    padding-bottom: 1.2rem; */
+  padding: 1.2rem 12rem 1.2rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .post-div {
   padding: 1.2rem 20rem 1.2rem;
 }
-body{
+
+body {
   background-color: #fafdf3;
 }
-h1, h2 {
+
+h1,
+h2 {
   font-weight: 700;
   color: #91583C;
 }
 
-.color{
+.color {
   background-color: #C29C6D;
 
 }
 
-.paragraph{
+.paragraph {
   font-family: 'Shadows Into Light', cursive;
   font-size: 1.5rem;
   color: #228C22;
@@ -29,27 +30,53 @@ h1, h2 {
 }
 
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-    font-weight: 900;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: 900;
 }
-.navbar-nav  li a{
+
+.navbar-nav li a {
   float: right;
   letter-spacing: 2px;
   font-size: 0.8rem;
   transition: background-color ease-out 0.8s, border-radius 0.2s, text-decoration 0.1s;
 }
-.navbar-nav  li a:hover {
-    color: #fff !important;
-    background-color: #e1cfb9;
-    border: none;
-    border-radius: 2px;
-    text-decoration: overline;
+
+@media screen and (max-width: 980px) {
+  .container-fluid {
+    padding: 0.9rem 10rem 0.9rem;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .nav-item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 623px) {
+
+  .nav-item {
+    margin-top: 10px;
+  }
+
+  .container-fluid {
+    padding: 1rem;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+.navbar-nav li a:hover {
+  color: #fff !important;
+  background-color: #e1cfb9;
+  border: none;
+  border-radius: 2px;
+  text-decoration: overline;
 
 }
 
@@ -63,27 +90,30 @@ h1, h2 {
 /* ABOUT */
 
 /* POST */
-.posts{
-  padding: 0 2rem;
-}
-.single-post{
-  padding: 0 2rem;
-}
-.post-title{
-  font-weight: 600;
-}
-.post-content{
+.posts {
   padding: 0 2rem;
 }
 
-.post-break{
+.single-post {
+  padding: 0 2rem;
+}
+
+.post-title {
+  font-weight: 600;
+}
+
+.post-content {
+  padding: 0 2rem;
+}
+
+.post-break {
   margin: 2rem auto;
   width: 70%;
   line-height: 0;
   border: 0.4px solid #cfb79f;
 }
 
-.read-more{
+.read-more {
   color: #1c53a4;
   font-size: 1rem;
   font-weight: 600;
@@ -97,6 +127,7 @@ h1, h2 {
   max-width: 100%;
   padding: 0 0.5rem;
 }
+
 .label-textbox {
   margin-top: 1rem;
 }
@@ -105,7 +136,7 @@ h1, h2 {
 /* FOOTER */
 
 .footer-padding {
-	padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .footer {
@@ -113,16 +144,16 @@ h1, h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-	position: fixed;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 3rem;
-	background-color: #ebd8bd;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #ebd8bd;
 }
 
 .footer p {
   margin-top: 0.8rem;
-	font-size: 1rem;
+  font-size: 1rem;
   color: #fff;
 }
