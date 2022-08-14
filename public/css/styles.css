@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;500;900&display=swap');
 .container-fluid {
   padding: 1.2rem 12rem 1.2rem;
   font-family: 'Playfair Display', serif;
@@ -27,6 +28,7 @@ h2 {
   font-size: 1.5rem;
   color: #228C22;
   font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .navbar {
@@ -86,8 +88,20 @@ h2 {
 
 /* Components */
 
+/* HOME */
+.date{
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  font-family: 'Shadows Into Light', cursive;
+}
 
 /* ABOUT */
+
+/* CONTACT */
+.newFontFamily {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 500;
+}
 
 /* POST */
 .posts {
@@ -122,6 +136,12 @@ h2 {
 }
 
 /* COMPOSE */
+.form-div {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
 .textBox {
   width: 100%;
   max-width: 100%;
@@ -132,6 +152,14 @@ h2 {
   margin-top: 1rem;
 }
 
+.publish-btn {
+  width: 30%;
+  align-self: center;
+}
+
+.compose-content{
+  margin-bottom: 1rem;
+}
 
 /* FOOTER */
 

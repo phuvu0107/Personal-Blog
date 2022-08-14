@@ -1,12 +1,14 @@
 <%- include("partials/header") %>
 
 <h1>Compose</h1>
-<form action="/compose" method="post">
+<form action="/compose" method="post" class='form-div'>
+  <label for='postDate' class="">Date</label>
+  <input type='date' name='postDate' min='2020-01-01' max='2100-01-01'/>
   <label for="postTitle" class="label-textbox">Title</label>
   <input type="text" name="postTitle" placeholder="Post title..." class="textBox" required/>
   <label for="post" class="label-textbox">Post</label>
-  <textarea name="post" class="textBox" placeholder="Write content..." rows="12" required></textarea>
-  <button type="submit" name="button" class="btn btn-outline-success" >PUBLISH</button>
+  <textarea name="post" class="textBox compose-content" placeholder="Write content..." rows="12" required></textarea>
+  <button type="submit" name="button" class="btn btn-outline-success publish-btn" >PUBLISH</button>
 </form>
 
 <%- include("partials/footer") %>

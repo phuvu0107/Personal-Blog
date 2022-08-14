@@ -4,13 +4,14 @@
 <p class="paragraph"><%=homeStartingContent%></p>
 <div class="posts">
   <%content.forEach( (element) => {%>
-    <h2 class="post-title" href="/posts/<%=element.postTitle%>" ><%=element.postTitle%></h2>
-    <p class="post-content paragraph"><%=element.postContent.slice(0, 100)%>
-      <a class="read-more" href="/posts/<%=element.postTitle%>"> ...Read more</a>
+    <h2 class="post-title"><%=element.title%><span class='date'><%=element.date%></span></h2>
+    <p class="post-content paragraph"><%=element.content.substring(0, 100)%>
+      <% if(element.content.length > 100){%>
+        <a class="read-more" href="/posts/<%=element._id%>"> ...Read more</a>
+      <%}%>
     </p>
     <div class="post-break"></div>
   <%})%>
 </div>
-
 
 <%- include("partials/footer") %>
